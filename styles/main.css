@@ -1,0 +1,4 @@
+.entry__form__row {
+    display: flex;
+    flex-direction: column;
+}
