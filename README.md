@@ -1,1 +1,1 @@
-![Layout](./Journal Wireframe.jpg)
+![Layout](journal-wireframe.jpg)
