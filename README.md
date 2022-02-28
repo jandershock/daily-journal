@@ -1,0 +1,1 @@
+![Layout](./Journal Wireframe.jpg)
