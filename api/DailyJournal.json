@@ -1,0 +1,32 @@
+{
+  "entry": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Ok"
+    },
+    {
+      "id": 2,
+      "date": "3/1/2022",
+      "concept": "Sorting functions",
+      "entry": "Learned about using a compare function in array.sort",
+      "mood": "Ok"
+    },
+    {
+      "id": 3,
+      "date": "3/1/2022",
+      "concept": "setInteval() method",
+      "entry": "Learned a little bit about how setInterval() works",
+      "mood": "Ok"
+    },
+    {
+      "date": "3/7/2022",
+      "concept": "Postman",
+      "entry": "Messed with GET and POST requests",
+      "mood": "Ok",
+      "id": 4
+    }
+  ]
+}
