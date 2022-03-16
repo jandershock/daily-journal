@@ -8,8 +8,16 @@ const ShowFooter = () => {
     footerEl.innerHTML = Footer();
 }
 
-const listItemCallback = () => {
-
+const SearchEntriesForString = () => {
+    let searchString = document.querySelector("#entrySearch").value;
+    console.log(searchString);
+    DataManager.getEntries()
+    .then(data => {
+        // Filter all entry objects based on searchString and create new list in the Dom with EntryListComponent
+        JournalEntryList.EntryListComponent(
+            data.filter(entryObj => entryObj.entry.includes(searchString))
+        )
+    })
 }
 
 const StartApp = () => {
@@ -25,9 +33,9 @@ const StartApp = () => {
         })
     })
 
+    document.querySelector("#entrySearchSubmitButton").addEventListener("click", SearchEntriesForString)
+
     ShowFooter();
-
-
 }
 
 StartApp();

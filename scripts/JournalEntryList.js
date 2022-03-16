@@ -10,11 +10,13 @@ import { JournalEntryComponent } from "./JournalEntry.js"
 const entryLog = document.querySelector("#entryLog")
 
 export const EntryListComponent = (entries) => {
+    let htmlObject = ``;
     for (const entry of entries) {
         /*
             Invoke the component that returns an
             HTML representation of a single entry
         */
-        entryLog.innerHTML += JournalEntryComponent(entry);
+        htmlObject += JournalEntryComponent(entry);
     }
+    entryLog.innerHTML = htmlObject;
 }
