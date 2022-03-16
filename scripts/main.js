@@ -8,12 +8,26 @@ const ShowFooter = () => {
     footerEl.innerHTML = Footer();
 }
 
+const listItemCallback = () => {
+
+}
+
 const StartApp = () => {
     DataManager.getEntries().then( data => {
         JournalEntryList.EntryListComponent(data);
+        
+        const sectionArray = document.querySelectorAll("#entryLog section")
+        sectionArray.forEach((element) => {
+            console.log(element);
+            element.addEventListener("click", (event) => {
+                console.log("Clicked on entry with id of", event.target.id.split('--')[1])
+            })
+        })
     })
 
     ShowFooter();
+
+
 }
 
 StartApp();
